@@ -270,7 +270,7 @@ if app_mode == "Home":
         """, unsafe_allow_html=True)
 
     # Display Image
-    image = Image.open("./music_image.webp")  # Replace with actual image path
+    image = Image.open("./images/music_image.webp")  # Replace with actual image path
     st.image(image, caption="Discover the Power of AI in Music Analysis", use_column_width=True)
 
     # Main Content with Improved Layout
@@ -421,7 +421,7 @@ elif app_mode == "About":
             </div>
             """, unsafe_allow_html=True)
         # Display Mel Spectrogram Image
-        mel_image = Image.open("./mel-img.png")
+        mel_image = Image.open("./images/mel-img.png")
         st.image(mel_image, caption="Example of a Mel Spectrogram", use_column_width=True)
 
     # About Dataset Section
