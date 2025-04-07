@@ -33,3 +33,8 @@ env/
 
 # Any local files
 *.local
+
+# Model and training outputs
+train_model.keras
+train_history.json
+test.py
