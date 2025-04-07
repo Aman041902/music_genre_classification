@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Dataset folders (if large or not owned)
+genres_original/
+
+
+# Test or temp files
+*.log
+*.tmp
+
+# Python virtual environment
+venv/
+ENV/
+env/
+
+
+# If using VS Code
+.vscode/
+
+# Any local files
+*.local
