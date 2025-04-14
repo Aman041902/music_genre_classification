@@ -1,17 +1,25 @@
 # 🎵 Music Genre Classification 🎧
 
-A machine learning project to predict the genre of a music file (MP3) using audio signal processing and a deep learning model.
+A machine learning project to predict the genre of a music file using the GTZAN dataset and a deep learning model trained on audio signal features.
+
+---
+
+## 📚 Dataset
+
+- **GTZAN Genre Collection**  
+  - 10 genres: Blues, Classical, Country, Disco, HipHop, Jazz, Metal, Pop, Reggae, Rock  
+  - 1000 audio files, 30s each, `.wav` format  
+  - Source: [marsyas.info](http://marsyas.info/downloads/datasets.html)
 
 ---
 
 ## 🚀 Features
 
-- 🎶 Accepts `.mp3` audio files
-- 🧠 Uses a trained deep learning model (CNN/LSTM/other) for classification
-- 📊 Predicts genre based on Mel Spectrograms
-- 🔌 REST API with FastAPI or Streamlit app interface
-- 📤 Accepts audio files via API or UI and returns predicted genre
-- 🌍 Ready for integration into a MERN stack project
+- 🎶 Accepts `.mp3` or `.wav` audio files
+- 🧠 Uses a trained deep learning model (CNN) for classification
+- 📊 Trained on Mel Spectrograms extracted from GTZAN dataset
+- 🔌 REST API with FastAPI or Streamlit interface
+- 🌍 Integration-ready for MERN stack frontend
 
 ---
 
@@ -19,12 +27,19 @@ A machine learning project to predict the genre of a music file (MP3) using audi
 
 - Python 3.9+
 - TensorFlow / Keras
-- Librosa for audio feature extraction
-- NumPy, Scikit-learn, Matplotlib
-- FastAPI for serving model via API
-- Streamlit for optional frontend (UI)
-- Render / Localhost for deployment
+- Librosa (audio preprocessing)
+- NumPy, Scikit-learn
+- FastAPI (API server)
+- Streamlit (optional frontend)
 
 ---
 
+
+
+## 📈 Model Performance
+
+- **Training Accuracy**: ~98%  
+- **Validation Accuracy**: ~92%  
+- Evaluated using 80/20 split on the GTZAN dataset  
+- Audio converted into Mel spectrograms for input to CNN
 
